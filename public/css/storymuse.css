@@ -1,0 +1,97 @@
+:root {
+    --sm-white: #FFFFFF;
+    --sm-bg: #FFFDFB;
+    --sm-peach: #F5DED3;
+    --sm-pink: #E9D9E9;
+    --sm-lavender: #DCD6EF;
+    --sm-navy: #292B55;
+    --sm-gray: #777784;
+    --sm-border: #EEEAF0;
+    --bs-body-font-family: 'Poppins', system-ui, sans-serif;
+    --bs-body-color: var(--sm-navy);
+    --bs-body-bg: var(--sm-bg);
+    --bs-link-color: var(--sm-navy);
+}
+
+body { font-family: var(--bs-body-font-family); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--sm-navy); outline-offset: 3px; }
+
+/* Type */
+.sm-h1 { font-weight: 700; font-size: clamp(2.4rem, 6vw, 4.25rem); line-height: 1.08; letter-spacing: -.02em; }
+.sm-h2 { font-weight: 600; font-size: clamp(1.6rem, 3.5vw, 2.4rem); line-height: 1.2; letter-spacing: -.02em; }
+.sm-h3 { font-weight: 600; font-size: 1.125rem; line-height: 1.35; letter-spacing: -.01em; }
+.sm-lead { font-size: 1.125rem; max-width: 520px; margin: 1.5rem 0 2rem; }
+.sm-muted { color: var(--sm-gray); }
+.sm-small { font-size: .85rem; }
+.sm-measure { max-width: 480px; }
+
+/* Header */
+.sm-header { background: var(--sm-bg); border-bottom: 1px solid var(--sm-border); }
+.sm-logo { font-weight: 700; font-size: 1.3rem; letter-spacing: -.02em; display: inline-flex; align-items: center; gap: .5rem; }
+.sm-logo-mark { width: 22px; height: 22px; display: inline-block; border: 1.5px solid var(--sm-navy); border-radius: 50% 50% 50% 4px; background: linear-gradient(135deg, var(--sm-peach), var(--sm-lavender)); }
+.sm-nav-link { font-weight: 500; font-size: .9rem; color: var(--sm-gray) !important; border-radius: 99px; padding: .5rem 1rem !important; }
+.sm-nav-link:hover { background: var(--sm-peach); color: var(--sm-navy) !important; }
+.sm-nav-link.active { background: var(--sm-pink); color: var(--sm-navy) !important; }
+.sm-toggler { border: 1px solid var(--sm-border); border-radius: 10px; font-weight: 500; font-size: .9rem; padding: .4rem .8rem; }
+
+/* Buttons */
+.sm-btn { border-radius: 99px; padding: .7rem 1.5rem; font-weight: 500; font-size: .9rem; }
+.sm-btn-primary { background: var(--sm-navy); color: #fff; border: 1px solid var(--sm-navy); }
+.sm-btn-primary:hover { background: var(--sm-navy); color: #fff; opacity: .9; }
+.sm-btn-ghost { background: transparent; color: var(--sm-navy); border: 1px solid var(--sm-navy); }
+.sm-btn-ghost:hover { background: var(--sm-navy); color: #fff; }
+
+/* Sections */
+.sm-hero {
+    padding: 5.5rem 0 4.5rem;
+    background:
+        radial-gradient(ellipse 60% 70% at 85% 10%, var(--sm-peach) 0, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 100% 90%, var(--sm-lavender) 0, transparent 70%);
+}
+.sm-section { padding: 4.5rem 0; }
+.sm-band-lavender { background: var(--sm-lavender); }
+.sm-how { background: var(--sm-peach); border-radius: 24px; padding: .5rem; margin: 0 !important; }
+.sm-how-item { background: var(--sm-white); border-radius: 18px; padding: 1.6rem; }
+
+/* Cards */
+.sm-card { display: flex; flex-direction: column; gap: .75rem; padding: 1.4rem; border: 1px solid var(--sm-border); border-radius: 18px; background: var(--sm-white); color: var(--sm-navy); transition: border-color .15s; }
+a.sm-card:hover { border-color: var(--sm-navy); color: var(--sm-navy); }
+.sm-tone-peach { background: var(--sm-peach); border-color: transparent; }
+.sm-tone-pink { background: var(--sm-pink); border-color: transparent; }
+.sm-tone-lavender { background: var(--sm-lavender); border-color: transparent; }
+.sm-cover { height: 88px; border-radius: 12px; display: flex; align-items: flex-end; padding: .6rem .8rem; font-weight: 600; font-size: .8rem; }
+.sm-cover-0 { background: var(--sm-peach); }
+.sm-cover-1 { background: var(--sm-pink); }
+.sm-cover-2 { background: var(--sm-lavender); }
+.sm-summary { font-size: .88rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.sm-stats { display: flex; gap: 1rem; font-size: .8rem; font-weight: 500; }
+
+/* Badges: status uses peach / lavender only, never green or red */
+.sm-badge { display: inline-block; padding: .15rem .65rem; border-radius: 99px; background: var(--sm-pink); color: var(--sm-navy); font-size: .75rem; font-weight: 500; }
+.sm-badge-ongoing { background: var(--sm-peach); }
+.sm-badge-completed { background: var(--sm-lavender); }
+.sm-badge-gem { background: transparent; border: 1px solid var(--sm-navy); }
+.sm-badge-lg { font-size: .85rem; font-weight: 600; padding: .3rem .9rem; }
+
+/* Footer */
+.sm-footer { border-top: 1px solid var(--sm-border); padding: 2.5rem 0; margin-top: 2.5rem; font-size: .8rem; color: var(--sm-gray); }
+
+/* Part 2: pages and forms */
+.sm-page-title { padding: 3.5rem 0 1.5rem; }
+.sm-chip { display: inline-block; padding: .45rem 1rem; border: 1px solid var(--sm-border); border-radius: 99px; background: var(--sm-white); font-size: .82rem; font-weight: 500; cursor: pointer; user-select: none; }
+.sm-chip:hover { background: var(--sm-peach); }
+.btn-check:checked + .sm-chip { background: var(--sm-navy); color: #fff; border-color: var(--sm-navy); }
+.btn-check:focus-visible + .sm-chip { outline: 2px solid var(--sm-navy); outline-offset: 3px; }
+.sm-input { border: 1px solid var(--sm-border); border-radius: 99px; padding: .6rem 1.1rem; font-size: .85rem; color: var(--sm-navy); background-color: var(--sm-white); }
+.sm-input:focus { border-color: var(--sm-navy); box-shadow: none; }
+.sm-quiz { background: var(--sm-white); border: 1px solid var(--sm-border); border-radius: 22px; padding: 2rem; }
+.sm-quiz legend { float: none; padding: 0; margin-bottom: .75rem; }
+.sm-empty { padding: 3rem; text-align: center; border: 1px dashed var(--sm-border); border-radius: 18px; }
+.sm-why { background: var(--sm-lavender); border-radius: 14px; padding: 1rem 1.25rem; font-size: .9rem; }
+.pagination { --bs-pagination-color: var(--sm-navy); --bs-pagination-active-bg: var(--sm-navy); --bs-pagination-active-border-color: var(--sm-navy); --bs-pagination-hover-bg: var(--sm-peach); --bs-pagination-focus-color: var(--sm-navy); --bs-pagination-border-color: var(--sm-border); }
+
+.sm-match-info {
+    margin-top: .75rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
