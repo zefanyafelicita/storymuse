@@ -28,7 +28,6 @@ body { font-family: var(--bs-body-font-family); line-height: 1.6; -webkit-font-s
 /* Header */
 .sm-header { background: var(--sm-bg); border-bottom: 1px solid var(--sm-border); }
 .sm-logo { font-weight: 700; font-size: 1.3rem; letter-spacing: -.02em; display: inline-flex; align-items: center; gap: .5rem; }
-.sm-logo-mark { width: 22px; height: 22px; display: inline-block; border: 1.5px solid var(--sm-navy); border-radius: 50% 50% 50% 4px; background: linear-gradient(135deg, var(--sm-peach), var(--sm-lavender)); }
 .sm-nav-link { font-weight: 500; font-size: .9rem; color: var(--sm-gray) !important; border-radius: 99px; padding: .5rem 1rem !important; }
 .sm-nav-link:hover { background: var(--sm-peach); color: var(--sm-navy) !important; }
 .sm-nav-link.active { background: var(--sm-pink); color: var(--sm-navy) !important; }
@@ -94,4 +93,8 @@ a.sm-card:hover { border-color: var(--sm-navy); color: var(--sm-navy); }
     margin-top: .75rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
+}
+
+.sm-logo-mark {
+    display: none !important;
 }
