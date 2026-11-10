@@ -10,7 +10,7 @@
 <header class="sm-header sticky-top">
     <nav class="navbar navbar-expand-lg" aria-label="Main">
         <div class="container">
-            <a class="sm-logo navbar-brand" href="{{ route('home') }}"><i class="sm-logo-mark"></i>StoryMuse</a>
+            <a class="sm-logo navbar-brand" href="{{ route('home') }}">StoryMuse</a>
             <button class="navbar-toggler sm-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav mx-lg-auto gap-lg-1">
