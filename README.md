@@ -68,8 +68,8 @@ Screenshots of the StoryMuse application:
 
 ## 4. Article and Demo Video
 
-- **Project Article:** [Insert article link here]
-- **Demo Video:** [Insert video link here]
+- **Project Article:** [StoryMuse: Building a Story Discovery Platform with Laravel, Docker, and Docker Compose](https://medium.com/@zefanyafelicita28/storymuse-building-a-story-discovery-platform-with-laravel-docker-and-docker-compose-363bdc15be64)
+- **Demo Video:** [Watch StoryMuse Demo on YouTube](https://youtu.be/IiTV3n4JBFs)
 
 ## 5. AI Usage Declaration
 
