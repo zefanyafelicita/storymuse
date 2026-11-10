@@ -1,4 +1,4 @@
-# StoryMuse 📚
+# StoryMuse
 
 **Discover Stories Beyond the Trending Page.**
 
