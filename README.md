@@ -1,59 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# StoryMuse 📚
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Discover Stories Beyond the Trending Page.**
 
-## About Laravel
+## 1. Project Description
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+StoryMuse is a web-based Wattpad story discovery and recommendation platform that helps readers discover interesting stories, including hidden gems that receive less attention despite their potential quality.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The project was developed to address the difficulty of discovering stories beyond popular or trending recommendations. Many potentially interesting stories may be overlooked because they have limited visibility or engagement.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+StoryMuse provides features such as story discovery, hidden gem recommendations, personalized recommendations, story collections, and story details.
 
-## Learning Laravel
+## 2. How to Run the Application
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+**Prerequisites:**
+- Docker Desktop
+- Git
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**Installation steps:**
 
-## Laravel Sponsors
+1. Clone the repository:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+   ```bash
+   git clone https://github.com/zefanyafelicita/storymuse.git
+   cd storymuse
+   ```
 
-### Premium Partners
+2. Create the environment file:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+   ```powershell
+   Copy-Item .env.example .env
+   ```
 
-## Contributing
+3. Build and run the application:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+   ```bash
+   docker compose up -d --build
+   ```
 
-## Code of Conduct
+4. Open StoryMuse in your browser:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+   ```text
+   http://localhost:8080
+   ```
 
-## Security Vulnerabilities
+5. Check container status:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   ```bash
+   docker compose ps
+   ```
 
-## License
+6. Stop the containers:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+   ```bash
+   docker compose down
+   ```
+
+**Note:** Do not use `docker compose down -v` if you want to preserve database data.
+
+## 3. Application Screenshots
+
+Screenshots of the StoryMuse application:
+
+- Home Page: `docs/screenshots/home.png`
+- Discover Page: `docs/screenshots/discover.png`
+- Hidden Gems Page: `docs/screenshots/hidden-gems.png`
+- For You Page: `docs/screenshots/for-you.png`
+
+## 4. Article and Demo Video
+
+- **Project Article:** [Insert article link here]
+- **Demo Video:** [Insert video link here]
+
+## 5. AI Usage Declaration
+
+AI tools were used as supporting tools during the development process, including:
+- Brainstorming and refining project features.
+- Assistance with backend implementation and API development.
+- Docker configuration and troubleshooting guidance.
+- Documentation writing and technical explanations.
+
+All AI-assisted suggestions were reviewed, adapted, integrated, and tested by the developer. The developer remains responsible for the final implementation and project results.
